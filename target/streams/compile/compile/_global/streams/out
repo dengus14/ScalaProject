@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/denisgusev/Desktop/ScalaProject/src/main/scala/Trade.scala:1:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m1 |[0m[33mcase class[0m [35mTrade[0m([36mprice[0m:[35mDouble[0m, [36mid[0m: [35mUUID[0m, [36msell[0m: [35mOrder[0m, [36mbuy[0m: [35mOrder[0m, [36mquantity[0m: [35mDouble[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                                   ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                                   Not found: type UUID[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
