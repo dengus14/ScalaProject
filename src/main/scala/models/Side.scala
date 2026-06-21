@@ -1,3 +1,5 @@
+package models
+
 
 
 sealed trait Side

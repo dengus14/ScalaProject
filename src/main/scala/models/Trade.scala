@@ -1,7 +1,8 @@
+package models
+
 import java.util.UUID
 
-
-case class Trade(price:Double, id: UUID, sell: Order, buy: Order, quantity: Double) {
+case class Trade(price: Double, id: UUID, sell: Order, buy: Order, quantity: Double) {
   require(quantity > 0, "Quantity has to be more than 0.")
   require(price > 0, "Price has to be more than 0.")
   val min: Double = Math.min(sell.quantity, buy.quantity)

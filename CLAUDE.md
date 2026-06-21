@@ -17,8 +17,8 @@ This is a **learning project** — the developer is learning Scala and functiona
 A limit order-matching engine with domain types as Scala ADTs (sealed traits / case classes):
 
 - `Side` — buy or sell (sealed trait with case objects)
-- `Order` — represents an intent to trade (side, quantity, price, ID)
-- `Trade` — represents a matched trade between two orders
+- `models.Order` — represents an intent to trade (side, quantity, price, ID)
+- `models.Trade` — represents a matched trade between two orders
 
 Source files live in `src/main/scala/`. No packages are used currently.
 

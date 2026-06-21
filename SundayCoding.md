@@ -1,10 +1,10 @@
-# Sunday Coding Plan — Order-Matching Engine
+# Sunday Coding Plan — models.Order-Matching Engine
 
 ## Phase 1: Housekeeping (~15 min)
-- Fix `hellSymbol` → `Symbol`
+- Fix `hellSymbol` → `models.Symbol`
 - `sbt compile` clean
 
-## Phase 2: OrderBook Data Structure (~1.5 hrs)
+## Phase 2: OrderBook Data Structure (~1.5 hrs) 
 - Immutable case class (buy list, sell list, trades)
 - Price-priority sorting (buys desc, sells asc)
 - Learn: `Ordering`, `List` vs `Vector`
