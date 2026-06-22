@@ -1,8 +1,21 @@
 package orderBook
 
-import models.{Order, Trade}
+import models.{Buy, Order, Sell, Trade}
 
-case class OrderBook private (buyOrders: List[Order], sellOrders: List[Order], trades: List[Trade])
+case class OrderBook private (buyOrders: List[Order], sellOrders: List[Order], trades: List[Trade]) {
+  def add(order: Order): OrderBook = {
+    order.side match{
+      case Buy => {
+        val newList = order :: buyOrders
+        OrderBook(newList, sellOrders, trades)
+      }
+      case Sell => {
+        val newList = order :: sellOrders
+        OrderBook(buyOrders, newList, trades)
+      }
+    }
+  }
+}
 
 object OrderBook{
   def apply(buyOrders: List[Order], sellOrders: List[Order], trades: List[Trade]): OrderBook = {

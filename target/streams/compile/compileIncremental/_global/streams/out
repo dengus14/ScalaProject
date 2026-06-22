@@ -1,33 +1,6 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 11 products, 4 sources, 1 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 13 products, 5 sources, 1 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/models/Symbol.scala, ${BASE}/src/main/scala/orderBook/OrderBook.scala, ${BASE}/src/main/scala/models/Order.scala, ${BASE}/src/main/scala/models/Trade.scala, ${BASE}/src/main/scala/models/Side.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/models/Side.scala, ${BASE}/src/main/scala/models/Trade.scala, ${BASE}/src/main/scala/orderBook/OrderBook.scala, ${BASE}/src/main/scala/models/Order.scala, ${BASE}/src/main/scala/models/Symbol.scala), removed = Set(${BASE}/src/main/scala/Side.scala, ${BASE}/src/main/scala/Order.scala, ${BASE}/src/main/scala/Symbol.scala, ${BASE}/src/main/scala/Trade.scala), changed = Set(), unmodified = ...),Set(${BASE}/target/scala-3.3.4/classes/Side.class, ${BASE}/target/scala-3.3.4/classes/Buy.class, ${BASE}/target/scala-3.3.4/classes/Order.class, ${BASE}/target/scala-3.3.4/classes/Sell.class, ${BASE}/target/scala-3.3.4/classes/Symbol.class, ${BASE}/target/scala-3.3.4/classes/Buy$.class, ${BASE}/target/scala-3.3.4/classes/Trade.class, ${BASE}/target/scala-3.3.4/classes/Sell$.class, ${BASE}/target/scala-3.3.4/classes/Trade$.class, ${BASE}/target/scala-3.3.4/classes/Order$.class, ${BASE}/target/scala-3.3.4/classes/Symbol$.class),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed: Set(${BASE}/src/main/scala/Side.scala, ${BASE}/src/main/scala/Order.scala, ${BASE}/src/main/scala/Symbol.scala, ${BASE}/src/main/scala/Trade.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set(${BASE}/src/main/scala/models/Symbol.scala, ${BASE}/src/main/scala/orderBook/OrderBook.scala, ${BASE}/src/main/scala/models/Order.scala, ${BASE}/src/main/scala/models/Trade.scala, ${BASE}/src/main/scala/models/Side.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(${BASE}/target/scala-3.3.4/classes/Side.class, ${BASE}/target/scala-3.3.4/classes/Buy.class, ${BASE}/target/scala-3.3.4/classes/Order.class, ${BASE}/target/scala-3.3.4/classes/Sell.class, ${BASE}/target/scala-3.3.4/classes/Symbol.class, ${BASE}/target/scala-3.3.4/classes/Buy$.class, ${BASE}/target/scala-3.3.4/classes/Trade.class, ${BASE}/target/scala-3.3.4/classes/Sell$.class, ${BASE}/target/scala-3.3.4/classes/Trade$.class, ${BASE}/target/scala-3.3.4/classes/Order$.class, ${BASE}/target/scala-3.3.4/classes/Symbol$.class)[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Trade, Side, Buy, Symbol, Order, Sell)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	product: Set(${BASE}/src/main/scala/Trade.scala, ${BASE}/src/main/scala/Symbol.scala, ${BASE}/src/main/scala/Side.scala, ${BASE}/src/main/scala/Order.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Trade, Side, Buy, Symbol, Order, Sell)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/models/Symbol.scala, ${BASE}/src/main/scala/orderBook/OrderBook.scala, ${BASE}/src/main/scala/Trade.scala, ${BASE}/src/main/scala/Symbol.scala, ${BASE}/src/main/scala/models/Order.scala, ${BASE}/src/main/scala/models/Trade.scala, ${BASE}/src/main/scala/Side.scala, ${BASE}/src/main/scala/Order.scala, ${BASE}/src/main/scala/models/Side.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Trade, Side, Buy, Symbol, Order, Sell[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding Buy by Side[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncluding Sell by Side[0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
-[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /Users/denisgusev/Desktop/ScalaProject/target/scala-3.3.4/classes ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /Users/denisgusev/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.3.4/scala3-sbt-bridge-3.3.4.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 1ca419a for Scala Compiler version 3.3.4[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/Users/denisgusev/Desktop/ScalaProject/target/scala-3.3.4/classes:/Users/denisgusev/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.4/scala3-library_3-3.3.4.jar:/Users/denisgusev/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.14/scala-library-2.13.14.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.219926083 s[0m
-[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m
