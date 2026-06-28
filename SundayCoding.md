@@ -1,23 +1,30 @@
-# Sunday Coding Plan — models.Order-Matching Engine
+# Coding Plan — Order-Matching Engine
 
-## Phase 1: Housekeeping (~15 min)
-- Fix `hellSymbol` → `models.Symbol`
+## Phase 1: Housekeeping — DONE
+- Fixed `hellSymbol` → `Symbol`
 - `sbt compile` clean
 
-## Phase 2: OrderBook Data Structure (~1.5 hrs) 
-- Immutable case class (buy list, sell list, trades)
-- Price-priority sorting (buys desc, sells asc)
-- Learn: `Ordering`, `List` vs `Vector`
+## Phase 2: OrderBook Data Structure — DONE
+- Immutable case class with `buyOrders`, `sellOrders`, `trades`
+- Private constructor + companion object `apply` for auto-sorting
+- Buys sorted descending (highest first), sells ascending (lowest first)
+- Learned: companion objects, `apply`, `sortBy`, `private` constructors, case class fields as vals
 
-## Phase 3: Adding Orders (~1.5 hrs)
-- `add(order)` → new OrderBook
-- Pattern match on Side
-- Test in `sbt console`
+## Phase 3: Adding Orders — DONE
+- `add(order)` → new OrderBook via pattern matching on `Side`
+- Prepend with `::`, route through `apply` (no `new`) to maintain sort invariant
+- Tested in `sbt console`
 
-## Phase 4: Matching Engine (~2 hrs)
-- Recursive matching: best buy >= best sell → trade
-- Partial fills, exact fills, no-match
-- Learn: tail recursion, `@tailrec`
+## Phase 4: Matching Engine — TODO (start here next session)
+- Build a `matchOrders` method inside `OrderBook`
+- Core logic: if best buy price >= best sell price → create a Trade
+- Handle three cases:
+  1. **Exact fill** — buy qty == sell qty → both orders consumed
+  2. **Partial fill** — one side has leftover quantity → reduced order stays in book
+  3. **No match** — best buy < best sell (or a list is empty) → stop
+- Recurse until no more matches possible
+- Learn: tail recursion, `@tailrec` annotation
+- Hint: pattern match on `(buyOrders, sellOrders)` using list head/tail destructuring (`x :: xs`)
 
 ## Phase 5: Main App (~1 hr)
 - `Main.scala` entry point
